@@ -1,4 +1,4 @@
-#Gri Creative Workshop
+# Gri Creative React Workshop
 
 <p align="center">
   <a href="https://github.com/babel/babel">

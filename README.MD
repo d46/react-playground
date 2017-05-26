@@ -32,6 +32,9 @@ Read here --> [http://babeljs.io/docs/setup/#installation](http://babeljs.io/doc
 
 In step 3, We will use via config.
 
+Setting up babel preset for react.
+
+
 
 
 

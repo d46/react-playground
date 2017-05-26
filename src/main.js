@@ -9,4 +9,10 @@ export default class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App name="Perez" />, document.getElementById('root'));
+ReactDOM.render(
+    <div>
+        <App name="Perez" />
+        <App name="Perez" />
+        <App name="Perez" />
+    </div>
+    , document.getElementById('root'));

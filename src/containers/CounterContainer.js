@@ -1,5 +1,3 @@
-/* @flow */
-
 import CounterStore from '../data/CounterStore'
 import FluxContainer from 'flux/lib/FluxContainer'
 import CounterView from '../views/CounterView'
@@ -13,7 +11,7 @@ function getStores() {
 
 function getState() {
   return {
-    counter: CounterStore.getState(),
+    counter: CounterStore.getInitialState(),
     count: CounterActions.count
   }
 }

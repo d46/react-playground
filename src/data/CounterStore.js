@@ -1,8 +1,5 @@
-/* @flow */
-
-import {ReduceStore} from 'flux/utils';
+import ReduceStore from 'flux/lib/FluxReduceStore';
 import CounterDispatcher from './CounterDispatcher'
-import {OrderedMap} from 'immutable'
 import CounterActionTypes from './CounterActionTypes'
 
 class CounterStore extends ReduceStore {

@@ -1,7 +1,10 @@
+/* @flow */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CounterContainer from './containers/CounterContainer'
 
 export default class App extends React.Component {
+
     constructor(props) {
         super(props)
         this.state = {
@@ -12,7 +15,6 @@ export default class App extends React.Component {
         this.multiply = this.multiply.bind(this)
         this.multiplyValChangeHandler = this.multiplyValChangeHandler.bind(this)
     }
-
     componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(), 1000
@@ -58,10 +60,10 @@ export default class App extends React.Component {
         );
     }
 
+
+
 }
 
 ReactDOM.render(
-    <div>
-        <App name="Perez"/>
-    </div>
+    <CounterContainer />
     , document.getElementById('root'));

@@ -34,15 +34,21 @@ In step 3, We will use via config.
 
 Setting up babel preset for react.
 
+## Setting up webpack.config
 
-
-
-
-
-
-
-
-
-
-
-
+```javascript
+const path = require('path');
+module.exports = {
+    entry: './src/main.js',
+    output: {
+        path: path.resolve('target'),
+        filename: 'bundle.js'
+    },
+    module: {
+        loaders: [
+            { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+            { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+        ]
+    }
+}
+```

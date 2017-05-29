@@ -4,16 +4,16 @@ import CounterView from '../views/CounterView'
 import CounterActions from '../data/CounterActions'
 
 function getStores() {
-  return [
-      CounterStore,
-  ]
+    return [
+        CounterStore,
+    ]
 }
 
 function getState() {
-  return {
-    counter: CounterStore.getInitialState(),
-    count: CounterActions.count
-  }
+    return {
+        counter: CounterStore.getState(),
+        count: CounterActions.count
+    }
 }
 
 export default FluxContainer.createFunctional(CounterView, getStores, getState)
